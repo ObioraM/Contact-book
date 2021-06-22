@@ -181,7 +181,6 @@ namespace ContactAPI.Controllers
         
 
         [HttpGet]
-        //[Route("search")]
         [Authorize(Roles = "Admin")]
         public IActionResult GetAllContactbySearch([FromQuery] PagingDto model)
         {
